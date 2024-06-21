@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png">
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./assets/css/blog.css">
+</head>
+<body>
+<header id="header" class="header">
+    <nav class="navbar container">
+        <a href="./blog.html">
+        <h2 class="logo">NewsFlash</h2>
+    </a>
+    <div class="menu" id="menu">
+        <ul class="list">
+            <li class="list-item">
+                <li class="list-item">
+                    <a href="./blog.html" class="list-link"> HOME</a>
+                </li>
+                <li class="list-item">
+                    <a href="./blog.html#olderposts" class="list-link nav__link">Categories</a>
+                </li>
+                <li class="list-item">
+                    <a href="./blog.html#popular-tags" class="list-link nav__link">Popular</a>
+                </li>
+                <li class="list-item">
+                    <a href="./blog.html#news" class="list-link nav__link">News</a>
+            <li class="list-item">
+                <a href="./membership.html" class="list-link nav__link active"> Membership</a>             
+            </li>
+            <li class="list-item">
+                <a href="./contact.html" class="list-link nav__link">Contact</a>
+            </li>
+            <li class="list-item">
+                <a href="#" class="list-link screen-lg-hidden">log in</a>
+                <li class="list-item">
+                    <a href="#" class="list-link screen-lg-hidden">Sign up</a>
+                </li>
+            </li> 
+        </ul>
+    </div>
+    <div class="list list-right">
+        <button class="btn place-items-center" id="theme-toggle-btn">
+            <i class="ri-sun-line sun-icon"></i>
+            <i class="ri-moon-line moon-icon"></i>
+        </button>
+
+        <button class="btn place-items-center" id="search-icon">
+            <i class="ri-search-line"></i>
+        </button>
+
+        <button class="btn place-items-center screen-lg-hidden menu-toggle-icon"
+         id="menu-toggle-icon">
+            <i class="ri-menu-3-line open-menu-icon"></i>
+            <i class="ri-close-line close-menu-icon"></i>
+        </button>
+        <a href="#" class="list-link screen-sm-hidden">log in</a>
+        <a href="#" class="list-link screen-sm-hidden btn sign-up-btn 
+        fancy-border">
+    <span>log in</span></a>
+    </div>
+    </nav>
+</header>
+
+v <!-- Search -->
+<div class="search-form-container container" id="search-form-container">
+    <div class="form-container-inner">
+        <form action="" class="form">
+            <input type="text" class="form-input" placeholder="search for author/book">
+            <button class="btn form-btn" type="submit">
+                <i class="ri-search-line"></i>
+            </button>
+        </form>
+        <span class="form-note"> or press ESC to close</span>
+    
+    </div>
+
+    <button class="btn form-close-btn place-item-center" id="form-close-btn">
+        <i class="ri-close-line"></i>
+    </button>
+</div>
+<!-- membership site -->
+ <section class="newsletter section" style="background-image:url('./assets/images/featured/membership.jpg');">
+
+    <div class="container" style="color: white;">
+        <h2 class="title section-title" data-name="Newsletter" onclick="submitThisShit()">Membership</h2>
+
+        <div class="form-container-inner">
+            <h6 class="title newsletter-title" style="color:wheat ;">Register for free</h6>
+            <p class="newsletter-description">Thousands of FREE Ebooks, Including Hundreds upon Hundreds You’ll NEVER find on Amazon!
+
+                To begin, just tell us where to send your Free Ebooks.</p>
+
+            <form class="form" name="myform">
+                <input style="border-color: white;" class="form-input" type="email" placeholder="Enter your email address" name="fname" required>
+                <button class="btn form-btn" type="submit">
+                    <i class="ri-mail-send-line"></i>
+                </button>
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<a class="top-link hide" href="" id="js-top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+    <span class="screen-reader-text">Back to top</span>
+  </a>
+<footer class="footer section" id="news">
+    <div class="footer-container container d-grid">
+        <div class="company-data">
+            <a href="./blog.html">
+                <h2 class="logo">NewsFlash</h2>
+            </a>
+            <p class="company-description">
+                Some RANDOM text 
+                Some RANDOM text 
+            </p>
+            <ul class="list social-media">
+                <li class="list-item">
+                    <a href="#" class="list-link"><i class="ri-instagram-line"></i></a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link"><i class="ri-facebook-circle-line"></i></a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link"><i class="ri-pinterest-line"></i></a>
+                </li>
+            </ul>
+            <span class="copyright-notice">&copy; 2022 NewsFlash. All rights reserved.</span>            
+        </div>
+        <div>
+            <h6 class="title footer-title">Categories</h6>
+
+            <ul class="list footer-list">
+                <li class="list-item">
+                    <a href="#" class="list-link">Sample list-</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Sample list-</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Sample list-</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Sample list-</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Sample list-</a>
+                </li> 
+            </ul>
+        </div>
+
+        <div>
+            <h6 class="title footer-title">Useful Links</h6>
+
+            <ul class="list footer-list">
+                <li class="list-item">
+                    <a href="#" class="list-link">Sample list-</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Sample list-</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Sample list-</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Sample list-</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Sample list-</a>
+                </li> 
+            </ul>
+        </div>
+
+        <div>
+            <h6 class="title footer-title">Company</h6>
+
+            <ul class="list footer-list">
+                <li class="list-item">
+                    <a href="#" class="list-link">Sample list-</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Sample list-</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Sample list-</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Sample list-</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Sample list-</a>
+                </li> 
+            </ul>
+        </div>
+    </div> 
+</footer>
+
+<!-- Swiper.js -->
+<script src="./assets/js/swiper-bundle.min.js"></script>
+<!-- Custom script -->
+<script src="./assets/js/blog.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+       function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            if (x == "0") {
+                alert("Fields Cannot be Empty");
+                return false;
+            }
+            else{
+                alert("Succesful")
+            }
+            }
+    </script>
+</body>
+</html>
